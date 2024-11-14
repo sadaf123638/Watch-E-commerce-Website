@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.navigation-bar{
+    margin-bottom: 60px;
+}
+.navbar-toggler-icon{
+    color: black;
+    font-size: 25px;
+    padding-top: 10%;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+}
+.navbar-brand{
+    color: rgb(2, 2, 68);
+    font-family: "Allison", cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.nav-item .nav-link{
+    color:  rgb(2, 2, 68); 
+    font-size: 1rem;
+    letter-spacing: .03rem;
+
+}
+
+
+.image-container {
+    width: 80%;
+    height: calc(100vh - 13vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.watchimg {
+    width: 18rem;
+}
+span{
+    font-size: 45px;
+    color: rgb(2, 2, 68);
+    font-family: "Allison", cursive;
+    font-weight: 600;
+  
+}
+h1{
+   font-weight: bold;
+    color: rgb(2, 2, 68);
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(2, 2, 68); 
+}
+p{
+    color:  rgb(2, 2, 68); 
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+.btn-container{
+    display: flex;
+}
+.primary-btn, .secondary-btn{
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  transition: transform .5s ease-in-out;
+
+}
+.primary-btn{
+    background-color: lightgray;
+}
+.secondary-btn{
+    background-color:  rgb(2, 2, 68);
+    color: white;
+    transform: scale(1.1);
+}
+.primary-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.secondary-btn:hover{
+    transform: scale(1);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+    }
+
+    .watchimg {
+        width: 12rem;
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: row; 
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 48%; 
+        padding: 0.6rem 1rem;
+    }
+}
+
+/*about-page*/
+
+
+
+
+.about {
+    background: rgb(243, 243, 171);
+    width: 100%;
+    height: auto; 
+    transform: skewY(-6deg);
+    margin-bottom: 15%;
+    padding: 4rem 0; 
+}
+
+.about-page {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.about-page-image img {
+    width: 28rem;
+    padding-top: 10px;
+}
+
+.about-page-image {
+    transform: skewY(6deg);
+}
+
+.watch-about-page {
+    transform: skewY(6deg);
+}
+
+.heading-part {
+    color: rgb(2, 2, 68);
+    padding-top: 32px;
+}
+
+.watch-details {
+    font-size: 15px;
+    font-weight: none;
+    color: rgb(2, 2, 68);
+}
+
+/* Media Query for 1024px (Tablet Size) */
+@media (max-width: 1024px) {
+    .about {
+        height: auto; 
+        transform: none; 
+        padding: 3rem 0; 
+    }
+
+    .about-page {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .about-page-image img {
+        width: 24rem; 
+    }
+
+    .watch-about-page {
+        text-align: center; 
+        transform: none; 
+    }
+}
+
+@media (max-width: 853px) {
+    .about {
+        height: auto; 
+        transform: none; 
+        padding: 3rem 0;
+    }
+
+    .about-page {
+        flex-direction: column; 
+        width: 90%;
+        text-align: center; 
+    }
+
+    .about-page-image {
+        transform: none; 
+        margin-top: 20px;
+        text-align: center; 
+    }
+
+    .about-page-image img {
+        width: 22rem; 
+        margin: auto; 
+    }
+
+    .watch-about-page {
+        transform: none; 
+        text-align: center; 
+    }
+
+    .heading-part {
+        font-size: 2rem; 
+    }
+
+    .watch-details {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* Media Query for Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+    .about {
+        height: auto;
+        transform: none;
+        padding: 2rem 0; 
+    }
+
+    .about-page {
+        flex-direction: column; 
+        width: 90%;
+    }
+
+    .watch-about-page {
+        transform: none;
+        text-align: center;
+    }
+
+    .about-page-image {
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .about-page-image img {
+        width: 20rem;
+    }
+
+    .heading-part {
+        font-size: 1.8rem;
+    }
+
+    .watch-details {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/*product-page */
+
+.products {
+    margin-bottom: 15%;
+}
+
+.heading-product {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: rgba(177, 175, 175, 0.26);
+    padding: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.img-product {
+    width: 9rem;
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.card-title {
+    font-size: 1.17rem;
+    font-weight: 600;
+    color: rgb(2, 2, 68);
+}
+
+.price {
+    font-size: 1.10rem;
+    color: rgb(2, 2, 68);
+}
+
+.bookbtn {
+    background: rgb(2, 2, 68);
+    color: white;
+    transform: scale(1.1);
+    border: none;
+    box-shadow: none;
+}
+
+.bookbtn:hover {
+    transform: scale(1.1);
+    border: none;
+    font-weight: 600;
+    background: white;
+    color: rgb(2, 2, 68);
+}
+
+/* Media Query for 984px and below */
+@media (max-width: 984px) {
+    .col-xl-3, .col-lg-3 {
+        flex: 0 0 50%; /* Each card takes up 50% of the width */
+        max-width: 50%;
+    }
+
+    .img-product {
+        width: 8rem; /* Reduce image size slightly */
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .bookbtn {
+        font-size: 1.05rem;
+    }
+}
+
+/* Media Query for 768px and below */
+@media (max-width: 768px) {
+    .col-xl-3, .col-lg-3 {
+        flex: 0 0 50%; /* Maintain 50% width for tablets */
+        max-width: 50%;
+    }
+
+    .img-product {
+        width: 7rem;
+    }
+
+    .card-title {
+        font-size: 1.05rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .bookbtn {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+/* Media Query for 576px and below */
+@media (max-width: 576px) {
+    .col-xl-3, .col-lg-3 {
+        flex: 0 0 100%; /* Cards take full width on mobile */
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .img-product {
+        width: 6rem;
+        padding-top: 1rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 0.95rem;
+    }
+
+    .bookbtn {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+
+
+
+/*banner */
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dv39sjtgj/image/upload/v1731476317/watch9_fz9ask.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 60vh;
+    margin-bottom: 10%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.offer {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Allison", cursive;
+    letter-spacing: .03rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.offer-name {
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.banner-btn {
+    font-size: 1.1rem;
+    padding: 1rem 1rem;
+    background: rgb(247, 247, 158);
+    border: none;
+    transition: transform .5s ease-in-out;
+}
+
+.banner-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Media Query for 853px (Tablet Size) */
+@media (max-width: 853px) {
+    .banner {
+        background-attachment: fixed; 
+        height: 50vh; 
+        padding: 2rem 0; 
+    }
+
+    .offer {
+        font-size: 28px; 
+        margin-bottom: 0.5rem;
+    }
+
+    .offer-name {
+        font-size: 36px; 
+        margin-bottom: 1.5rem;
+    }
+
+    .banner-btn {
+        font-size: 1.2rem; 
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+/* Media Query for Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+    .banner {
+        height: 50vh;
+        padding: 2rem 0;
+    }
+
+    .offer {
+        font-size: 25px;
+    }
+
+    .offer-name {
+        font-size: 32px;
+    }
+
+    .banner-btn {
+        font-size: 1.1rem;
+    }
+}
+
+
+/*collection*/
+.watch-collection img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Media query for 786px width screens */
+
+@media (max-width: 912px) {
+    .watch-collection {
+        margin-bottom: 20px; /* Add margin for spacing at bottom */
+    }
+
+    /* Optional: Adjust image height if needed */
+    .watch-collection img {
+        height: auto;
+    }
+}
+
+@media (max-width: 786px) {
+    .watch-collection {
+        margin-bottom: 20px; /* Add margin to prevent sticking */
+    }
+
+    /* Optional: You can reduce the height on smaller screens if needed */
+    .watch-collection img {
+        height: auto;
+    }
+}
+
+
+
+/*contact*/
+#contact{
+    margin-top: 10%;
+    margin-bottom: 6%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dv39sjtgj/image/upload/v1731476350/images7_ed9qjr.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 70vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.heading-prdct{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+form{
+    width: 400px;
+}
+.form-group input{
+   border-radius: 50px;
+   border: 3px solid rgb(2, 2, 68);
+}
+.form-group textarea{
+    border-radius: 10px;
+    border: 3px solid rgb(2, 2, 68);
+}
+
+@media (max-width: 768px) {
+    #contact {
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%; /* Full width form on small screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .heading-prdct {
+        font-size: 1.5rem;
+    }
+}

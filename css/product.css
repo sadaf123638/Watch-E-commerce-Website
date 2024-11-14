@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.product-page{
+    margin-bottom: 10%;
+}
+.main-watch{
+    background: rgba(177, 175, 175, 0.26);
+    border-radius: 5px;
+    height: 500px;
+}
+.main-watch img{
+    width: 450px;
+    padding-top: 3%;
+}
+.main-heading{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(2, 2, 68);
+    padding-top: 3%;
+}
+.small-heading{
+    font-size: 15px;
+    color: rgb(2, 2, 68);
+    padding-top: 1%;
+    font-weight: bold;
+}
+.prdct-details{
+    font-size: 13px;
+    color: black;
+}
+h3{
+    color: rgb(2, 2, 68);  
+}
+.quantity label{
+    font-size: 15px;
+    color: rgb(2, 2, 68);
+    font-weight: bold;
+}
+.prdct-price{
+    font-size: 15px;
+    color: rgb(2, 2, 68);
+    font-weight: bold;
+}
+.prdct-btn{
+    background-color:  rgb(2, 2, 68);
+    color: white;
+    transform: scale(1.1);
+    border: none;
+    font-weight: 600;
+}
+.prdct-btn:hover{
+    background-color: rgb(208, 255, 0);
+    color: rgb(31, 9, 82);
+}
+
+.watch-color {
+    margin-right: 10px; /* Aap is value ko adjust kar sakte hain */
+}
+
+.watch-colors img {
+    background-color: rgba(177, 175, 175, 0.26);
+}
+
+/*scroll images*/
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Mobile touch scroll ke liye */
+}
+
+.scroll-container img {
+    height: 200px;
+    margin-right: 10px;
+}
+
+/* Scrollbar styling */
+.scroll-container::-webkit-scrollbar {
+    height: 8px; /* Scrollbar ki height */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #ffffff; /* Scrollbar track background */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Scrollbar handle color */
+    border-radius: 10px; /* Rounded corners for scrollbar handle */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover effect on scrollbar */
+}
+
+
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) 
+{
+    .main-watch {
+        height: auto; /* Adjust height for smaller devices */
+    }
+
+    .main-watch img {
+        max-width: 100%; /* Make image responsive on tablets */
+    }
+
+    .prdct-details {
+        font-size: 12px; /* Adjust text size for tablets */
+    }
+
+    .prdct-price {
+        font-size: 14px;
+    }
+
+    .prdct-btn {
+        transform: scale(1);
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 576px) 
+{
+    .main-watch {
+        height: auto;
+    }
+
+    .main-watch img {
+        max-width: 100%;
+    }
+
+    .prdct-details {
+        font-size: 11px;
+    }
+
+    .prdct-price {
+        font-size: 13px;
+    }
+
+    .prdct-btn {
+        transform: scale(1);
+    }
+
+    .scroll-container img {
+        height: 150px; /* Smaller images for mobile */
+    }
+
+    /* Watch color images responsive adjustment */
+    .watch-colors img {
+        width: 80px; /* Smaller thumbnails for mobile */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller heading for mobile */
+    }
+}
+
+/* For large screens */
+@media (min-width: 1200px) 
+{
+    .main-watch img {
+        max-width: 500px;
+    }
+}
